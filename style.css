@@ -96,8 +96,8 @@ nav .nav-menu-2 hr {
   display: flex;
   background-color: #0e1927;
   width: 50%;
-  border: 1px solid red;
-  height: 50%;
+  bottom: -53.9%;
+  transform: translateX(100%);
 }
 .first-section .rightdown div {
   margin: 0 20px;
