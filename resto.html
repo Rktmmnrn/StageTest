@@ -15,48 +15,56 @@
 
   <body>
     <nav>
-      <div class="logo">
-        <span style="text-transform: uppercase; font-size: 28px">logo</span>
-        <span style="font-size: 4px">RESTAURANT.BAR.COFFEE.BISTRO</span>
-      </div>
-      <div class="nav-menu-1">
-        <a href="#">HOME</a>
-        <a href="#">MENU</a>
-        <a href="#">ABOUT</a>
-        <a href="#">BLOG</a>
-        <a href="#">CONTACT</a>
-      </div>
-      <a href="#" class="nav-booktable">
-        <span style="border: 1px solid #c6ac83; padding: 16px 32px">BOOK A TABLE</span>
-      </a>
-      <div class="nav-menu-2">
-        <a href="#">
+      <div>
+        <div class="logo">
+          <span style="text-transform: uppercase; font-size: 28px; font-family: 'Tenor Sans', sans-serif; font-weight: 400;">logo</span>
+          <span style="font-size: 4px">RESTAURANT.BAR.COFFEE.BISTRO</span>
+        </div>
+        <div class="nav-menu-1">
+          <a href="#">HOME</a>
+          <a href="#">MENU</a>
+          <a href="#">ABOUT</a>
+          <a href="#">BLOG</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <!-- <a href="#" class="nav-booktable">
+          <span style="border: 1px solid #c6ac83; padding: 16px 32px">BOOK A TABLE</span>
+        </a> -->
+        <div id="nav-btn">
+          <button class="btn" id="nav-button">BOOK A TABLE</button>
+          <hr>
+        </div>
+        <div class="nav-menu-2">
+          <a href="#">
             <hr>
             <hr style="margin-left: 10px;">
             <hr>
-        </a>
+          </a>
+        </div>
       </div>
     </nav>
 
     <!-- first section -->
-    <section class="first">
-      <img src="img/Rectangle 1.png" alt="image1" id="image1"> <!-- premiere images -->
+    <section class="hero">
+      <div class="first-image1"> <!-- premiere images -->
+        <img src="img/Rectangle 1.png" alt="image1" id="image1">
+      </div>
       <div class="first-savortheart">
         <div>
+          <div>
             <h1>savor the art of fine dining</h1>
-            <p style="font-weight: 300; line-height: 20px; color: rgba(255, 255, 255, 0.815); word-spacing: 5px;">Lorem ipsum dolor sit amet consectetur. Vulputate a vitae eget volutpat integer. Id ut vitae eget integer. Eu curabitur nam facilisi semper in. Facilisi aliquet platea sapien duis augue sit vulputate. Ultricies diam arcu scelerisqu.</p>
-        </div>
-        <div>
-          <div class="first-discovermenu">
-              <a href="#">DISCOVER MENU</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Vulputate a vitae eget volutpat integer. Id ut vitae eget integer. Eu curabitur nam facilisi semper in. Facilisi aliquet platea sapien duis augue sit vulputate. Ultricies diam arcu scelerisqu.</p>
           </div>
-          <hr style="width: 201px; color: #c6ac83; border: 1px solid; margin-top: 8px;">
+          <div>
+            <button id="first-discovermenu" class="btn">DISCOVER MENU</button>
+            <hr style="width: 201px; color: #c6ac83; border: 1px solid; margin-top: 8px;">
+          </div>
         </div>
       </div>
       <div class="first-rightdown">
         <div>
           <div>1 Person</div>
-          <div>11/12/2024</div>
+          <div class="first-span">11/12/2024 <span>︾</span></div>
           <div>09:00 pm</div>
           <div>BOOK NOW</div>
         </div>
@@ -71,7 +79,7 @@
         <div class="second-aboutRestau">
           <div style="display: flex; flex-direction: row; align-items: center;">
             <h2>ABOUT RESTAURANT</h2>
-            <div><hr style="width: 73px; margin-left: 10px;"></div>
+            <div><hr style="width: 73px; margin-left: 10px; border-top: 1px solid #c6ac83;"></div>
           </div>
           <div>
             <h1>OUR COMMITMENT TO QUALITY AND TASTE</h1><br>
@@ -79,9 +87,7 @@
             <p>Tellus tellus in neque id. Mauris praesent consectetur orci porta ut elementum. Molestie fames nec natoque interdum mauris nisi. Tristique.</p>
           </div>
           <div>
-            <div class="second-readmore">
-                <a href="#">READ MORE ABOUT US</a>
-            </div>
+            <button class="btn" id="second-readmore">READ MORE ABOUT US</button>
             <hr style="width: 250px; color: #0e1927; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
@@ -94,9 +100,7 @@
             <p>For reservations or special events, feel free to contact us.</p>
           </div>
           <div>
-            <div class="second-booktable">
-                <a href="#">BOOK A TABLE</a>
-            </div>
+            <button class="btn" id="second-booktable">BOOK A TABLE</button>
             <hr style="width: 184px; color: #0e1927; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
@@ -106,7 +110,7 @@
           </div>
           <div class="second-beforetimeHour">
             <div class="second-timeHour">
-              <h1 style="color: #c6ac83; font-family: 'Tenor Sans', sans-serif; font-weight: 400; font-size: 32px;">OPENING TIME HOURS</h1>
+              <h1 style="color: #c6ac83; font-family: 'Tenor Sans', sans-serif; font-weight: 400; font-size: 32px; margin-bottom: 40px;">OPENING TIME HOURS</h1>
               <div>
                 <li>Monday <hr> 7:00 - 21:00</li>
                 <li>Tuesday <hr> 7:00 - 21:00</li>
@@ -140,19 +144,17 @@
       <div class="third-listMenu">
         <div>
           <div>
-            <div class="third-specialMenu">
-                <a href="#">SPECIAL MENU</a>
-            </div>
+            <button class="btn" id="third-specialMenu">SPECIAL MENU</button>
             <hr style="width: 184px; color: #c6ac83; border: 1px solid; margin-top: 8px;">
           </div>
           <div>
-            <a href="#">DRINKS</a>
+            <button class="btn">DRINKS</button>
           </div>
           <div>
-            <a href="#">SEAFOOD</a>
+            <button class="btn">SEAFOOD</button>
           </div>
           <div>
-            <a href="#">DESSERTS</a>
+            <button class="btn">DESSERTS</button>
           </div>
         </div>
       </div>
@@ -191,10 +193,8 @@
             </div>
           </div>
           <div>
-            <div class="third-viewAll2">
-              <a href="#">VIEW ALL MENU</a>
-            </div>
-            <hr style="width: 188px; color: #c6ac83; border: 1px solid; margin-top: 8px;">
+            <button class="btn" id="third-viewAll2">VIEW ALL MENU</button>
+            <hr style="width: 199px; color: #c6ac83; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
         <aside>
@@ -218,14 +218,12 @@
         <div>
           <div>
             <h2>QUALITY AND BALANCE</h2>
-            <div><hr style="width: 73px; color: #c6ac83; margin-left: 20px;"></div>
+            <div><hr style="width: 73px; border-top: 1px solid #c6ac83; margin-left: 20px;"></div>
           </div>
           <h1>OUR FOOD PHILOSOPHY</h1>
           <p>Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus placerat turpis. Ut ullamcorper condimentum tincidunt orci quis ullamcorper. Arcu ut tincidunt egestas mauris mi. Ultrices egestas rhoncus nec morbi sed .</p>
           <div>
-            <div class="five-viewAll">
-              <a href="#">VIEW ALL THE CHEF</a>
-            </div>
+            <button class="btn" id="five-viewAll">VIEW ALL THE CHEF</button>
             <hr style="width: 229px; color: #0e1927; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
@@ -257,7 +255,7 @@
     </section>
     <!-- seventh section -->
     <section class="seven">
-      <div class="seven-fleche"><</div>
+      <button><img src="img/simple-line-icons_arrow-left.svg" alt="left"></button>
       <div class="seven-elegant">
         <div>
           <div class="seven-elegantDining">
@@ -278,11 +276,122 @@
           <hr style="width: px; color: #c6ac83; border: 1px solid; margin-top: 15px;">
         </div>
       </div>
-      <div class="seven-fleche">></div>
+      <button><img src="img/Vector 1.svg" alt="right"></button>
     </section>
     <!-- heigth section -->
     <section class="height">
-      
+      <div>
+        <div class="height-whatNew">
+          <div>
+            <div><hr></div>
+            <h2>LATEST NEW</h2>
+            <div><hr></div>
+          </div>
+          <h1>WHAT'S NEW IN OUR BLOG</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus placerat turpis. Ut ullamcorper condime.</p>
+        </div>
+      </div>
+      <div class="height-lastImage">
+        <div class="height-divImage">
+          <div>
+            <img src="img/Frame 81.png" alt="image8">
+          </div>
+          <div class="height-list">
+            <li>● BY JOHN DOE</li>
+            <li>● CASUAL DINNING, COFFEES</li>
+          </div>
+          <hr>
+          <p>Every bite was a masterpiece. The ambiance was warm, and the service made me feel like royalty. This is my go-to spot for any celebration</p>
+          <div class="height-readMore">
+            <button>READ MORE</button>
+            <hr>
+          </div>
+        </div>
+        <div class="height-divImage">
+          <div>
+            <img src="img/Frame 82.png" alt="image9">
+          </div>
+          <div class="height-list">
+            <li>● BY JOHN DOE</li>
+            <li>● CASUAL DINNING, COFFEES</li>
+          </div>
+          <hr>
+          <p>Every bite was a masterpiece. The ambiance was warm, and the service made me feel like royalty. This is my go-to spot for any celebration</p>
+          <div class="height-readMore">
+            <button>READ MORE</button>
+            <hr>
+          </div>
+        </div>
+        <div class="height-divImage">
+          <div>
+            <img src="img/Frame 83.png" alt="image10">
+          </div>
+          <div class="height-list">
+            <li>● BY JOHN DOE</li>
+            <li>● CASUAL DINNING, COFFEES</li>
+          </div>
+          <hr>
+          <p>Every bite was a masterpiece. The ambiance was warm, and the service made me feel like royalty. This is my go-to spot for any celebration</p>
+          <div class="height-readMore">
+            <button>READ MORE</button>
+            <hr>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- nineth section -->
+    <section class="nine">
+      <div>
+        <img src="img/Map.png" alt="image11">
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-part1">
+        <div>
+          <div class="logo">
+            <span style="text-transform: uppercase; font-size: 28px; font-family: 'Tenor Sans', sans-serif; font-weight: 400;">logo</span>
+            <span style="font-size: 4px">RESTAURANT.BAR.COFFEE.BISTRO</span>
+          </div>
+          <p>Every bite was a masterpiece. The ambiance was warm, and the service made me feel like royalty.</p>
+          <div class="footer-reseaux">
+            <a href="#"><img src="img/ri_facebook-fill.svg" alt="facebook"></a>
+            <a href="#"><img src="img/lets-icons_insta.svg" alt="instagram"></a>
+            <a href="#"><img src="img/prime_twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="img/mdi_youtube.svg" alt="youtube"></a>
+          </div>
+        </div>
+        <div class="footer-quicklinks">
+          <h1>QUICK LINKS</h1>
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-location">
+          <h1>LOCATION</h1>
+          <p style="color: #c6ac83;">Address</p>
+          <p>3517 W. Gray St. Utica, Pennsylvania 57867</p>
+          <p style="color: #c6ac83;">booking and contact</p>
+          <p>kenzi.lawson@example.com <br> (316) 555-0116</p>
+        </div>
+        <div class="footer-latestnews">
+          <h1>LATEST NEWS</h1>
+          <p style="color: #c6ac83;">Register your email to not miss any news and offers from us</p>
+          <button class="btn"><a href="#">Email Address</a> <img src="img/Vector.svg" alt="vector"></button>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-lastpart">
+        <p>© 2024. designed by sitraka design and Me. All rights reserved</p>
+        <div>
+          <p>PRIVACY</p>
+          <p>TERM OF USE</p>
+          <p>POLICY</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
