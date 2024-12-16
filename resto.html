@@ -10,47 +10,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tenor+Sans&display=swap" rel="stylesheet">
-    <!-- <script src="animation.js"></script> -->
+    <script src="animation.js"></script>
     <title>Restau</title>
   </head>
 
   <body>
-    <nav>
-      <div>
-        <div class="nav-menuHamburger" id="nav-menu">
-          <img src="img/Hamburger Menu.svg" alt="menu">
+    <header>
+      <section>
+        <div class="nav-menuHamburger">
+          <img src="img/Hamburger Menu.svg" alt="menu" onclick="leftSlide()">
         </div>
         <div class="logo">
           <span style="text-transform: uppercase; font-size: 28px; font-family: 'Tenor Sans', sans-serif; font-weight: 400;">logo</span>
           <span style="font-size: 4px">RESTAURANT.BAR.COFFEE.BISTRO</span>
         </div>
-        <div class="nav-menu-1">
+        <nav class="nav-menu-1" id="nav-menu1">
           <a href="#">HOME</a>
           <a href="#">MENU</a>
           <a href="#">ABOUT</a>
           <a href="#">BLOG</a>
           <a href="#">CONTACT</a>
-        </div>
+        </nav>
         <div id="nav-btn">
           <button class="btn" id="nav-button">BOOK A TABLE</button>
           <hr>
         </div>
         <div class="nav-menu-2">
-          <a href="#">
+          <a href="#" onclick="">
             <hr>
             <hr style="margin-left: 10px;">
             <hr>
           </a>
         </div>
-      </div>
-    </nav>
+      </section>
+      <!-- <div>
+
+      </div> -->
+    </header>
 
     <!-- first section -->
-    <section class="hero">
-      <div class="first-image1"> <!-- première image -->
+    <main class="hero">
+      <section class="first-image1"> <!-- première image -->
         <img src="img/Rectangle 1.png" alt="image1" id="image1">
-      </div>
-      <div class="first-savortheart">
+      </section>
+      <section class="first-savortheart">
         <div>
           <div>
             <h1>savor the art of fine dining</h1>
@@ -61,20 +64,20 @@
             <hr style="width: 201px; color: #c6ac83; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
-      </div>
-      <div class="first-rightdown">
+      </section>
+      <section class="first-rightdown">
         <div>
           <div>1 Person</div>
           <div class="first-span">11/12/2024 <span>︾</span></div>
           <div>09:00 pm</div>
           <div>BOOK NOW</div>
         </div>
-      </div>
-    </section> 
+      </section>
+    </main> 
 
     <!-- second section -->
-    <section class="second">
-      <div class="second-imgText">
+    <main class="about">
+      <section class="second-imgText">
         <div class="second-image"> <!-- second image -->
           <img src="img/Rectangle 2.png" alt="image2" id="image2">
         </div>
@@ -93,8 +96,8 @@
             <hr style="width: 250px; color: #0e1927; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
-      </div>
-      <div class="second-openingTime">
+      </section>
+      <section class="second-openingTime">
         <div class="second-afterOpening">
           <div>
             <p>We're delighted to serve you. check out our opening hours below.</p>
@@ -125,12 +128,12 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- third section -->
-    <section class="third">
-      <div>
+    <main class="specialMenu">
+      <section>
         <div class="third-tasteBest">
           <div>
             <div><hr></div>
@@ -142,9 +145,9 @@
             <p>Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus placerat turpis. Ut ullamcorper condimentum tincidunt orci quis.</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="third-listMenu">
+      <section class="third-listMenu">
         <div>
           <div>
             <button class="btn" id="third-specialMenu">SPECIAL MENU</button>
@@ -160,9 +163,9 @@
             <button class="btn">DESSERTS</button>
           </div>
         </div>
-      </div>
+      </section>
       
-      <div class="third-viewAll">
+      <section class="third-viewAll">
         <aside>
           <div class="third-aside">
             <img src="img/Rectangle 6.png" alt="image4" style="left: 0;">
@@ -205,18 +208,18 @@
             <img src="img/Rectangle 7.png" alt="image5" style="right: 0;">
           </div>
         </aside>
-      </div>
-    </section>
+      </section>
+    </main>
     
     <!-- fourth section -->
-    <section class="videoPreparation">
+    <main class="videoPreparation">
       <img src="img/Rectangle 4.png" alt="image6">
       <div class="video-play">▶</div>
-    </section>
+    </main>
     
     <!-- fifth section -->
-    <section class="foodPhilosophy">
-      <div class="five-imageQuality">
+    <main class="foodPhilosophy">
+      <section class="five-imageQuality">
         <div>
           <img src="img/Rectangle 5.png" alt="image7">
         </div>
@@ -232,12 +235,12 @@
             <hr style="width: 229px; color: #0e1927; border: 1px solid; margin-top: 8px;">
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- sixth section -->
-    <section class="six">
-     <div>
+    <main class="six">
+     <section>
        <div>
          240
          <p>CLIENT EVERYDAY</p>
@@ -257,13 +260,13 @@
          23
          <p>YEAR OF OPERATION</p>
        </div>
-     </div>
-    </section>
+     </section>
+    </main>
 
     <!-- seventh section -->
-    <section class="seven">
+    <main class="dinning">
       <button><img src="img/simple-line-icons_arrow-left.svg" alt="left"></button>
-      <div class="seven-elegant">
+      <section class="seven-elegant">
         <div>
           <div class="seven-elegantDining">
             <div>“</div>
@@ -282,13 +285,13 @@
           </div>
           <hr style="width: px; color: #c6ac83; border: 1px solid; margin-top: 15px;">
         </div>
-      </div>
+      </section>
       <button><img src="img/Vector 1.svg" alt="right"></button>
-    </section>
+    </main>
 
     <!-- heigth section -->
-    <section class="news">
-      <div>
+    <main class="news">
+      <section>
         <div class="height-whatNew">
           <div>
             <div><hr></div>
@@ -298,8 +301,8 @@
           <h1>WHAT'S NEW IN OUR BLOG</h1>
           <p>Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus placerat turpis. Ut ullamcorper condime.</p>
         </div>
-      </div>
-      <div class="height-lastImage">
+      </section>
+      <section class="height-lastImage">
         <div class="height-divImage">
           <div>
             <div class="height-date"><h1>05</h1><p>OCT 24</p></div>
@@ -351,19 +354,19 @@
             <hr>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- nineth section -->
-    <section class="map">
-      <div>
+    <main class="map">
+      <section>
         <img src="img/Map.png" alt="image11">
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer>
-      <div class="footer-part1">
+      <section class="footer-part1">
         <div>
           <div class="logo">
             <span style="text-transform: uppercase; font-size: 28px; font-family: 'Tenor Sans', sans-serif; font-weight: 400;">logo</span>
@@ -397,16 +400,16 @@
           <p style="color: #c6ac83;">Register your email to not miss any news and offers from us</p>
           <button class="btn"><a href="#">Email Address</a> <img src="img/Vector.svg" alt="vector"></button>
         </div>
-      </div>
+      </section>
       <hr>
-      <div class="footer-lastpart">
+      <section class="footer-lastpart">
         <p>© 2024. designed by sitraka design and Me. All rights reserved</p>
         <div>
           <p>PRIVACY</p>
           <p>TERM OF USE</p>
           <p>POLICY</p>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
